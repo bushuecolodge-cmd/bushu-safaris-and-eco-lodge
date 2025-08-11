@@ -1,0 +1,41 @@
+<section id="safaris" style="padding: 50px; background: #f4f8f5; font-family: Arial, sans-serif;">
+  <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px; color: #2e6f40;">Safari Adventures</h2>
+  <p style="text-align: center; max-width: 700px; margin: auto; font-size: 1.2rem; color: #444;">
+    Explore Tanzania’s breathtaking wildlife with our guided safari tours. Witness the Great Migration, spot the Big Five, and experience nature up close.
+  </p>
+  
+  <div style="text-align: center; margin-top: 30px;">
+    <button onclick="document.getElementById('booking-form').scrollIntoView({behavior:'smooth'});" 
+      style="background: #2e6f40; color: white; padding: 15px 25px; font-size: 1.2rem; border: none; border-radius: 8px; cursor: pointer;">
+      Book Now
+    </button>
+  </div>
+
+  <!-- Booking Form -->
+  <div id="booking-form" style="margin-top: 50px; background: white; padding: 30px; border-radius: 10px; max-width: 600px; margin-left: auto; margin-right: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h3 style="text-align: center; color: #2e6f40;">Safari Booking Form</h3>
+    <form action="https://formspree.io/f/xxxxabcd" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+      
+      <label>Email:</label>
+      <input type="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+      
+      <label>Phone:</label>
+      <input type="text" name="phone" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+      
+      <label>Safari Date:</label>
+      <input type="date" name="date" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+      
+      <label>Number of Guests:</label>
+      <input type="number" name="guests" required min="1" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+      
+      <label>Special Requests:</label>
+      <textarea name="requests" rows="4" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      
+      <button type="submit" style="background: #2e6f40; color: white; padding: 15px; font-size: 1rem; border: none; border-radius: 8px; cursor: pointer; width: 100%;">
+        Submit Booking
+      </button>
+    </form>
+  </div>
+</section>
